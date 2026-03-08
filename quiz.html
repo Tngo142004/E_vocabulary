@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Quiz Game</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<h1>Trang chủ </h1>
+<a href="index.html">Back to Home</a>
+<h1>Quiz Game</h1>
+
+<div class="quiz-box">
+
+<div id="start-screen">
+<button onclick="startQuiz()">Start Quiz</button>
+</div>
+
+<div id="quiz-screen" style="display:none;">
+
+<p>
+Score: <span id="score">0</span> |
+Streak: <span id="streak">0</span>
+</p>
+
+<h2 id="question"></h2>
+
+<div id="options"></div>
+<div id="feedback"></div>
+
+</div>
+
+</div>
+
+<script src="quiz.js"></script>
+
+</body>
+</html>

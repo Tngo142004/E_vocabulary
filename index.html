@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Vocab App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Vocab Learning App</h1>
+
+<div class="lookup">
+
+<input id="word" placeholder="Word">
+
+<button onclick="lookupWord()">Lookup</button>
+
+<input id="phonetic" placeholder="Phonetic">
+
+<input id="type" placeholder="Type">
+
+<input id="meaning" placeholder="Meaning">
+
+<button onclick="addWord()">Add Word</button>
+
+<div id="audioBox"></div>
+
+</div>
+
+<h2>Daily Words</h2>
+<div id="dailyWords" class="box"></div>
+
+
+<h2>Word List</h2>
+
+<button onclick="toggleList()">Show / Hide List</button>
+
+<div id="wordList" class="box" style="display:none">
+
+<div class="word-header">
+
+<div>Word</div>
+<div>Phonetic</div>
+<div>Type</div>
+<div>Meaning</div>
+<div>Favorite</div>
+<div>Delete</div>
+
+</div>
+
+</div>
+
+
+<h2>Stats</h2>
+
+<div class="stats">
+
+<div>Total: <span id="totalWords"></span></div>
+
+<div>Favorite: <span id="favWords"></span></div>
+
+<div>Learned: <span id="learnedWords"></span></div>
+
+</div>
+<div class="card">
+
+<h2>Quiz Game</h2>
+
+<div class="quiz-box">
+
+<div class="quiz-stats">
+
+</div>
+
+<div id="quizQuestion"></div>
+
+<div id="quizOptions"></div>
+
+</div>
+<a href="quiz.html">
+<button>Start Quiz Game</button>
+</a>
+
+
+<h2>Flashcard</h2>
+
+<div class="flashcard" onclick="flipCard()">
+
+<div id="flashWord">Word</div>
+
+<div id="flashMeaning" style="display:none">
+Meaning
+</div>
+
+</div>
+
+<button onclick="nextFlashcard()">Next Card</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>

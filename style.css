@@ -1,0 +1,281 @@
+*{
+box-sizing:border-box;
+}
+
+body{
+
+font-family:Arial, sans-serif;
+
+background:linear-gradient(
+135deg,
+#6dd5fa,
+#8e9cff,
+#b388ff,
+#ff9ecf
+);
+
+background-size:400% 400%;
+animation:aurora 15s ease infinite;
+
+margin:0;
+padding:30px;
+
+}
+
+/* aurora animation */
+
+@keyframes aurora{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+h1{
+
+text-align:center;
+color:white;
+margin-bottom:30px;
+
+}
+
+/* cards */
+
+.lookup,
+#wordList,
+#dailyWords,
+.stats{
+
+background:rgba(255,255,255,0.9);
+
+backdrop-filter:blur(6px);
+
+padding:20px;
+
+border-radius:12px;
+
+/* viền rõ hơn */
+
+border:2px solid rgba(255,255,255,0.6);
+
+box-shadow:0 8px 25px rgba(0,0,0,0.2);
+
+margin-bottom:20px;
+
+}
+
+/* input */
+
+input{
+
+padding:10px;
+
+border:1px solid #ddd;
+
+border-radius:8px;
+
+width:100%;
+
+margin:5px 0;
+
+}
+
+/* button */
+
+button{
+
+background:linear-gradient(
+90deg,
+#7f7fd5,
+#86a8e7,
+#91eae4
+);
+
+border:none;
+
+color:white;
+
+padding:8px 14px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-size:13px;
+
+}
+
+button:hover{
+
+opacity:0.9;
+
+}
+
+/* word list 6 column */
+
+.word-header{
+
+display:grid;
+
+grid-template-columns:
+1fr
+1fr
+1fr
+2fr
+120px
+120px;
+
+align-items:center;
+
+padding:14px 20px;
+
+font-weight:bold;
+
+border-bottom:2px solid rgba(0,0,0,0.15);
+
+}
+.word-item{
+
+display:grid;
+
+grid-template-columns:
+1fr
+1fr
+1fr
+2fr
+120px
+120px;
+
+align-items:center;
+
+padding:14px 20px;
+
+gap:10px;
+
+border-bottom:1px solid rgba(0,0,0,0.08);
+
+}
+.word-item button{
+
+justify-self:center;
+
+width:90px;
+
+}
+
+/* last item */
+
+.word-item:last-child{
+
+border-bottom:none;
+
+}
+
+/* button inside word list */
+
+.word-item button{
+
+width:90px;
+
+padding:6px 10px;
+
+font-size:12px;
+
+}
+
+/* flashcard */
+
+.flashcard{
+
+width:320px;
+height:160px;
+
+background:linear-gradient(
+135deg,
+#7f7fd5,
+#86a8e7,
+#91eae4
+);
+
+color:white;
+
+border-radius:14px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:22px;
+
+margin-top:15px;
+
+cursor:pointer;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.25);
+
+border:2px solid rgba(255,255,255,0.4);
+
+transition:transform 0.2s;
+
+}
+
+
+/* flashcard hover */
+
+.flashcard:hover{
+
+transform:scale(1.03);
+
+}
+.quiz-box{
+
+max-width:500px;
+
+margin:auto;
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+text-align:center;
+
+}
+
+#options button{
+
+display:block;
+
+width:100%;
+
+margin:8px 0;
+
+}
+#feedback{
+margin-top:20px;
+font-size:22px;
+font-weight:bold;
+height:30px;
+}
+
+.correct{
+color:#2ecc71;
+}
+
+.wrong{
+color:#e74c3c;
+}
+
+button{
+display:block;
+margin:10px auto;
+padding:10px 20px;
+font-size:16px;
+cursor:pointer;
+}
